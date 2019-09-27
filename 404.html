@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400&display=swap" rel="stylesheet"> 
+    <style>
+        *{
+            font-family: 'Raleway', sans-serif;
+        }
+    .fondo{
+        font-family: 'Raleway', sans-serif;
+        padding:20px;
+        color:white;
+        width: 100%;
+        height: 180px;
+        background: #141E30;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to top, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to top, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+    .sombra{
+        -webkit-box-shadow: 0px 0px 27px -3px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 27px -3px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 27px -3px rgba(0,0,0,0.75);
+    }           
+    .card{
+        text-align:center;
+        margin-top:-40px;
+        background-color:white;
+        padding:20px;
+        border-radius:5px;
+        
+    }
+   ul li{
+       list-style: none;
+   }
+   .profile{
+      background-color:rgba(0,0,0,0);
+       padding:0;
+       margin-top:-100px;
+       margin-bottom:60px;
+       color:white;
+       border:none;
+   }
+   .blue{
+       font-size: 80px;
+    color: #141E30;
+   }
+   .user{
+       border-radius: 50%;
+       border:5px solid #141E30;
+   }
+   .danger{
+    text-align:center;
+    background-color: #fff;
+    margin-top: -30px;
+    border-radius: 4%;
+    width: 500px;
+    position:absolute;
+    left:50%;
+    margin-left:-250px;
+   }
+   .gray{
+      color: #888;
+   }
+
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./js/charts/chart.js"> </script>
+    <script src="./js/justgage-1.2.2/raphael-2.1.4.min.js"></script>
+    <script src="./js/justgage-1.2.2/justgage.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".line").peity("line",{ width: 100 })
+            $(".bar").peity("bar",{ width: 100 })
+            var updatingChart = $(".updating-chart").peity("line", { width: 100 })
+
+            setInterval(function() {
+            var random = Math.round(Math.random() * 10)
+            var values = updatingChart.text().split(",")
+            values.shift()
+            values.push(random)
+
+            updatingChart
+                .text(values.join(","))
+                .change()
+            }, 1000)
+
+
+
+            var g = new JustGage({
+                id: "gauge",
+                value: 280,
+                min: 0,
+                max: 365,
+                title: "Project status",
+                label: "ok"
+            });
+        })
+    </script>
+</head>
+<body>
+    <div class="fondo">
+       <div class="container text-center">
+           <img width="100" src="./img/white.png" alt="">
+       </div>
+    </div>
+    
+
+<div class="container">
+    
+        <div class="row">
+               <div class="danger sombra"><h1 class="blue">404</h1> <h4 class="gray">page  not found</h4>
+                   <img width="230" src="./img/nave.png" alt="">
+               <br>
+                 <a class="btn " href="./dashboard1.html">Volver</a>
+               </div>
+        </div>
+        
+
+       
+</div>
+  
+</body>
+
+</html> 

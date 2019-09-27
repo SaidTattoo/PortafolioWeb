@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400&display=swap" rel="stylesheet"> 
+    <style>
+    body{
+        background: #283048;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #859398, #283048);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #859398, #283048); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+    }
+    .login{
+        margin-top:80px;
+        width: 800px;
+        height:500px;
+        position:relative;
+        left:50%;
+        margin-left:-400px;
+        background-color: #fff;
+        -webkit-box-shadow: 0px 0px 27px -3px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 27px -3px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 27px -3px rgba(0,0,0,0.75);
+    }
+    .green{
+        padding:60px;
+        background-color: #117a65;
+        height:500px;
+        color:white;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 300;
+    }
+    .gray{
+        padding:40px;
+        background: #0F2027;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        color:white;
+        height:500px;
+    }
+    .gris:focus{
+      
+        background-color:rgba(0,0,0,0);
+        color:white;
+    }
+    .gris{
+        padding:30px;
+        background-color:rgba(0,0,0,0);
+        color:white;
+    }
+    .borde{
+       
+        border-radius:0%;
+        border:none;
+        border-bottom:1px solid white;
+    }
+    .btn-verde{
+       padding: 10px;
+        background-color: #117a65;
+        -webkit-box-shadow: 0px 0px 27px -3px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 27px -3px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 27px -3px rgba(0,0,0,0.75);
+        color:white;
+    }
+    .text{
+        padding: 40px;
+        font-size: 30px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="login">
+            <div class="row">
+           <div class="col-md-5 green text-center">
+               <img width="100" src="./img/white.png" alt="">
+               <p class="text">Control your platform online</p>
+           </div>
+           <div class="col-md-7 gray  text-center">
+
+           <h3> SmartDashboard</h3>
+            <br>
+            Sign In
+            <div class="form-group">
+                    <input class="form-control gris borde" type="text" placeholder="Name">
+            </div>
+            <div class="form-group">
+                    <input class="form-control gris borde" type="text" placeholder="Password" >
+            </div>
+            <br>
+            <a href="./index.html" class="btn btn-verde btn-block" >Sign In</a>
+           </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html> 

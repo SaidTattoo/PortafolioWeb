@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400&display=swap" rel="stylesheet"> 
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/c67b93e3f3.js" crossorigin="anonymous"></script>
+</head>
+<style>
+        body{
+            background:  white ;
+        }
+    .navbar{
+        background:  #669999 ;
+    }
+    .sombra{
+        -webkit-box-shadow: 0px 0px 27px -3px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 27px -3px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 27px -3px rgba(0,0,0,0.75);
+    }    
+    .video{
+        height:250px;
+        background-color: black;
+    }
+    .archivo>ul{
+        padding:0 !important;
+    }
+    .archivos ul li{
+        list-style:none;
+        padding: 10px;
+    }
+    .archivo ul li i{
+        margin-left:10px;
+    }
+    .word{
+        background: #0e5fa9
+;
+        color:white;
+    }
+    .word a,.pdf a{
+        color:white;
+    }
+    .pdf{
+        background:#db2c2c ;
+        color:white;
+    }
+    .ppt{
+        background:#e05f16 ;
+        color:white;
+    }
+    .cvs{
+        background:#0b8f1d;
+        color: white;
+    }
+    .form-control-borderless {
+    border: none;
+}
+
+.form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.message{
+    padding: 7px;
+    font-size: 24px;
+}
+.chat{
+    
+  height: 500px;
+  overflow: auto;
+}
+.chat li{
+  list-style: none;  
+}
+.chat li.mio{
+    padding: 10px;
+    border-radius: 5px;
+    color: #373d38
+;
+    margin-bottom:5px;
+    background-color:#52be80;
+    min-width: 100px;
+    max-width:400px;
+    margin-left:170px;
+}
+.chat li.otros{
+    padding: 10px;
+    border-radius: 5px;
+    color:white;
+    margin-bottom:5px;
+    background-color:  #bfc9ca ;
+    min-width: 100px;
+    max-width:400px;
+}
+.chat::-webkit-scrollbar-track:hover,
+.chat::-webkit-scrollbar-track:active {
+  background: red;
+}
+    </style>
+
+<body>
+   
+<nav class="navbar sombra">
+        <a class="navbar-brand " href="./index.html">    
+          <img src="./img/white.png" width="30" height="30" alt="">
+        </a>
+      </nav>
+  <div class="container-fluid">
+      <div class="row">
+            <div class="col-md-3 ">
+                <div class="img-thumbnail ">
+                    <div class="video"></div>  
+                </div>
+                <div class="">
+                        <div class="list-group list-group-horizontal mx-auto">
+                                <a href="#"data-toggle="tooltip" data-placement="top" title="subir volumen" class="list-group-item"> <i class="fas fa-volume-up"></i> </a>
+                                <a href="#"data-toggle="tooltip" data-placement="top" title="Sin volumen"  class="list-group-item"> <i class="fas fa-volume-mute"></i> </a>
+                                <a href="#"data-toggle="tooltip" data-placement="top" title="Preguntar "  class="list-group-item"> <i class="fas fa-hand-point-up"></i> </a>
+                                <a href="#"data-toggle="tooltip" data-placement="top" title="Mostrar camara"  class="list-group-item"> <i class="fas fa-video"></i> </a>
+                                <a href="#"data-toggle="tooltip" data-placement="top" title="compartir pantalla"  class="list-group-item"> <i class="fas fa-desktop"></i> </a>
+                                <a href="#"data-toggle="tooltip" data-placement="top" title="compartir pantalla"  class="list-group-item"></a>
+                            </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                    <div class="img-thumbnail text-center chat">
+                            <ul>
+                                    <li class="text-left otros">  esto es texto de prueba</li>
+                                    <li class="text-right mio"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi </li>
+                                    <li class="text-left otros">mi texto</li>
+                                    <li class="text-right mio"> otro texto</li>
+                                    <li class="text-right mio"> otro texto</li>
+                                    <li class="text-right mio"> otro texto</li>
+                                    <li class="text-left otros">mi texto</li>
+                                    <li class="text-right mio"> >otro texto</li>
+                                    <li class="text-left otros">  esto es texto de prueba</li>
+                                    <li class="text-right mio"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi </li>
+                                    <li class="text-left otros">mi texto</li>
+                                    <li class="text-right mio"> otro texto</li>
+                                    <li class="text-right mio"> otro texto</li>
+                                    <li class="text-right mio"> otro texto</li>
+                                    <li class="text-left otros">mi texto</li>
+                                    <li class="text-right mio"> >otro texto</li>
+                                </ul>
+                    </div> 
+            </div>
+            <div class="col-md-3">
+                    <div class="img-thumbnail text-center">
+                        <h5>Descargar Archivos compartidos </h5>
+                        <hr>
+                            <div class="archivos">
+                                <button class="btn btn-block word"><i class="fas fa-file-word"></i>informe.word</button>
+                                <button class="btn btn-block pdf"><i class="fas fa-file-pdf"></i> archivo.pdf</button>
+                                <button class="btn btn-block ppt"><i class="fas fa-file-powerpoint"></i>archivo.ppt</button>
+                                <button class="btn btn-block cvs"><i class="fas fa-file-excel"></i>archivo.cvs</button>       
+                                <hr>
+                                <button class="btn btn-secondary btn-block">subir archivo</button>                      
+                            </div>  
+                        </div>
+            </div>
+      </div>
+      <div class="row fixed-bottom ">
+          <div class="col-md-3"></div>
+          <div class="col-md-6">
+                <div class="img-thumbnail text-center">
+                        <form class="card card-sm">
+                                <div class=" row no-gutters align-items-center">
+                                    <div class="col-auto">
+                                            <i class=" message far fa-comments x4"></i>
+                                    </div>
+                                    <!--end of col-->
+                                    <div class="col">
+                                        <input class="form-control  form-control-borderless" type="search" placeholder="Comentar">
+                                    </div>
+                                    <!--end of col-->
+                                    <div class="col-auto">
+                                        <button class="btn btn-success" type="submit">Search</button>
+                                    </div>
+                                    <!--end of col-->
+                                </div>
+                            </form>
+                </div> 
+          </div>
+          <div class="col-md-3"></div>
+      </div>
+      
+  </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="./js/bootstrap.js"></script>
+<script>
+    $(document).ready(function(){
+        $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+    })
+
+</script>
+</html>

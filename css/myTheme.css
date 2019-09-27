@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400|Roboto+Slab|Roboto:300,400&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: white!important;
+}
+.bg{
+    background-color: #ccc;
+}
+.white{
+   background-color: #fff;
+}
+.gray{
+    color:#888;
+}
+.title{
+    font-family: 'Roboto Slab', serif;
+}
+.subtitle{
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+}
+.dev{
+   /* border:1px solid blue;*/
+}
+.bg-green{
+    background-color:#390;
+}
+.green{
+    color:#390;
+}
+.logo{
+    z-index:1000;
+}
+
+.img-profile{
+    border-radius: 50%;
+    width: 100px;
+}
+/*
+################
+    vista login
+################
+*/
+.round{
+    border-radius:10px;
+}
+.btn-fb{
+    background-color: #3b5998;
+    color:white;
+}
+.btn-google{
+    background-color: #db4a39;
+    color:white;
+}
+
+.skin-blue .main-header .navbar {
+    background-color:lightslategrey;
+    -webkit-box-shadow: 0px 0px 27px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 27px -3px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 27px -3px rgba(0,0,0,0.75);
+}
