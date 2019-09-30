@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400&display=swap" rel="stylesheet"> 
+    <title>Ayudantee vistas</title>
+    <script src="https://kit.fontawesome.com/c67b93e3f3.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    
+body {
+
+}
+
+canvas {
+
+}
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+    top:0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #17202A;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+/* ---- stats.js ---- */
+.blue{
+    background-color: #05100F  ;
+    color:white
+}
+.login{
+    border-radius: 5px;
+   position: relative;
+    margin-top:130px;
+background-color: #fff;
+padding:20px;
+    width:250px;
+    -webkit-box-shadow: 0px 0px 27px -3px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 27px -3px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 27px -3px rgba(0,0,0,0.75);
+}
+.circle{
+    z-index:1000;
+    position:absolute;
+    left:85px;
+    top:-70px;
+    width: 80px;
+    height:80px;
+    border-radius:50%;
+    background-color: #031714 ;
+    border:5px solid white;
+    -webkit-box-shadow: 0px 0px 27px -3px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 27px -3px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 27px -3px rgba(0,0,0,0.75);
+}
+.circle img{
+    margin-top:10px;
+    width: 100%;
+}
+    </style>
+
+<body>
+    <div id="particles-js"></div>   
+        <div class="container">
+           
+            <div class="login mx-auto">
+                    <div class="circle">
+                        <img src="./img/white.png" alt="">
+                    </div>
+                <input class="form-control" type="text">
+                <br>
+                <input class="form-control" type="password">
+                <br>
+                <a href="./index.html" class="btn blue btn-block">
+                    ingresar
+                </a>
+                
+              <a href="#"> forgot your password ?</a> 
+            </div>
+        </div>
+
+
+      
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="./js/bootstrap.js"></script>
+<script src="./particles.js-master/particles.min.js"></script>
+<script>
+    $(document).ready(function(){
+//* ---- particles.js config ---- */
+
+particlesJS("particles-js", {
+  "particles": {
+    "number": {
+      "value": 380,
+      "density": {
+        "enable": true,
+        "value_area": 800
+      }
+    },
+    "color": {
+      "value": "#ffffff"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 2
+      },
+      "image": {
+        "src": "img/github.svg",
+        "width": 50,
+        "height": 50
+      }
+    },
+    "opacity": {
+      "value": 0.5,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 1,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 3,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 40,
+        "size_min": 0.1,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 150,
+      "color": "#ffffff",
+      "opacity": 0.1,
+      "width": 2
+    },
+    "move": {
+      "enable": true,
+      "speed":2,
+      "direction": "none",
+      "random": false,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "grab"
+      },
+      "onclick": {
+        "enable": false,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 140,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 3
+      },
+      "repulse": {
+        "distance":100,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 1
+      },
+      "remove": {
+        "particles_nb": 1
+      }
+    }
+  },
+  "retina_detect": true
+});
+
+
+/* ---- stats.js config ---- */
+
+var count_particles, stats, update;
+stats = new Stats;
+stats.setMode(0);
+stats.domElement.style.position = 'absolute';
+stats.domElement.style.left = '0px';
+stats.domElement.style.top = '0px';
+document.body.appendChild(stats.domElement);
+count_particles = document.querySelector('.js-count-particles');
+update = function() {
+  stats.begin();
+  stats.end();
+  if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+    count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+  }
+  requestAnimationFrame(update);
+};
+requestAnimationFrame(update);
+    })
+
+
+</script>
+</html>
